@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=production nodemon index.js",
+    "prod": "cross-env NODE_ENV=development nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "express": "^4.17.0",
     "knex": "^0.17.0-next3",
     "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
